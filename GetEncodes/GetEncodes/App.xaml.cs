@@ -1,8 +1,6 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using GetEncodes.Services;
-using GetEncodes.Views;
 
 namespace GetEncodes
 {
@@ -13,7 +11,6 @@ namespace GetEncodes
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
             MainPage = new MainPage();
         }
 
