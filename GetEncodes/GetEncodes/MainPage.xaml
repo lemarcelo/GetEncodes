@@ -7,9 +7,10 @@
              x:Class="GetEncodes.MainPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Entry Placeholder="ID" Text="{Binding GetID}"/>
+            <Button Text="Gerar ID" Command="{Binding GetIDCommand}"/>
+            <Entry Placeholder="SHA256" Text="{Binding GetBytes}"/>
+            <Button Text="Gerar SHA256" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
